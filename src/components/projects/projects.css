@@ -1,4 +1,12 @@
 #projects {
-    background-color: grey;
-    height: 400px;
+    font-family: "Space Mono", monospace;
+    background-color: #c2f8ed;
+    height: 500px;
+    padding: 20px;
+}
+
+#title {
+    font-family: "Space Mono", monospace;
+    color: #1c2833;
+    padding: 10px;
 }
