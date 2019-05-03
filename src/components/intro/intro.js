@@ -7,7 +7,7 @@ import "./intro.css";
 const intro = props => {
     return (
         <div id="intro">
-            <Typography variant="h5" component="h3">
+            <Typography variant="h5" component="h5">
           This is the intro!
         </Typography>
         </div>

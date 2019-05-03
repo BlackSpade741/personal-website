@@ -6,7 +6,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
-import CssBaseline from '@material-ui/core/CssBaseline';
+
+import { Link } from 'react-scroll';
 
 import './header.css';
 
@@ -22,30 +23,55 @@ const styles = theme => (
             marginLeft: -12,
             marginRight: 20,
         },
+        linkButton: {
+            textTransform: "none",
+            marginLeft: "5px",
+        }
     }
 );
 
-function ButtonAppBar(props) {
+const header = props => {
     const { classes } = props;
     return (
         <div id="header" className={classes.root}>
         <AppBar position="static" color="default">
             <Toolbar>
-                <Button>
-                    <Avatar src={require("../../resources/ellen-icon.jpg")}/>
-                </Button>
+                <Avatar style={{margin: "10px"}} src={require("../../resources/ellen-icon.jpg")}/>
                 <Typography variant="h6" color="inherit" align="left" className={classes.grow}>
-                        ellen.chen
-                    </Typography>
-                <Button color="inherit">Login</Button>
+                    <u>ellen.chen</u>
+                </Typography>
+
+
+                <div id="buttons">
+                    <Button color="inherit" className={classes.linkButton}>
+                        <Link activeClass="active" to="about" spy={true} smooth={true} duratiion={300}>
+                            about
+                        </Link>
+                    </Button>
+                    <Button color="inherit" className={classes.linkButton}>
+                        <Link activeClass="active" to="experience" spy={true} smooth={true} duratiion={300}>
+                            experience
+                        </Link>
+                    </Button>
+                    <Button color="inherit" className={classes.linkButton}>
+                        <Link activeClass="active" to="projects" spy={true} smooth={true} duratiion={300}>
+                            projects
+                        </Link>
+                    </Button>
+                    <Button variant="contained" color="primary" className={classes.linkButton}>
+                        <Link activeClass="active" to="contact" spy={true} smooth={true} duratiion={300}>
+                            contact
+                        </Link>
+                    </Button>
+                </div>
             </Toolbar>
         </AppBar>
         </div>
     );
 }
 
-ButtonAppBar.propTypes = {
+header.propTypes = {
 classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ButtonAppBar);
+export default withStyles(styles)(header);
