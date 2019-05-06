@@ -1,14 +1,16 @@
 {
-  "main.css": "/static/css/main.d00d783d.chunk.css",
-  "main.js": "/static/js/main.26260c00.chunk.js",
-  "main.js.map": "/static/js/main.26260c00.chunk.js.map",
+  "main.css": "/static/css/main.d0c50ac6.chunk.css",
+  "main.js": "/static/js/main.74c7064a.chunk.js",
+  "main.js.map": "/static/js/main.74c7064a.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
   "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.59a279a6.chunk.js": "/static/js/2.59a279a6.chunk.js",
-  "static/js/2.59a279a6.chunk.js.map": "/static/js/2.59a279a6.chunk.js.map",
+  "static/js/2.3655471d.chunk.js": "/static/js/2.3655471d.chunk.js",
+  "static/js/2.3655471d.chunk.js.map": "/static/js/2.3655471d.chunk.js.map",
   "index.html": "/index.html",
-  "precache-manifest.eddb4a96ea2533f367f72ce2f29f9df0.js": "/precache-manifest.eddb4a96ea2533f367f72ce2f29f9df0.js",
+  "precache-manifest.cddeb019628cc73e41a20eb989acb032.js": "/precache-manifest.cddeb019628cc73e41a20eb989acb032.js",
   "service-worker.js": "/service-worker.js",
-  "static/css/main.d00d783d.chunk.css.map": "/static/css/main.d00d783d.chunk.css.map",
-  "static/media/ellen-icon.jpg": "/static/media/ellen-icon.a03d5e2c.jpg"
+  "static/css/main.d0c50ac6.chunk.css.map": "/static/css/main.d0c50ac6.chunk.css.map",
+  "static/media/App.css": "/static/media/myfont-regular-webfont.f121731b.eot",
+  "static/media/ellen-icon.jpg": "/static/media/ellen-icon.a03d5e2c.jpg",
+  "static/media/headshot.png": "/static/media/headshot.d5685551.png"
 }
