@@ -1,5 +1,41 @@
 #intro {
-    height: 500px;
-    background-color: #85c1e9;
+    height: 88vh;
+    background-color: #9fe0dc;
     margin-top: 0px;
+}
+
+#headshot {
+    height: 90%;
+    display: block;
+    position: relative;
+    top: 10%;
+    left: 22%;
+    overflow: hidden;
+}
+
+#caption {
+    font-family: "EllenFont";
+    position: absolute;
+    right: 13%;
+    top: 40%;
+    padding: 1em;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 5px 10px#02C8A7;
+    max-width: 30%;
+}
+
+@media only screen and (max-width: 960px) {
+    #headshot {
+        left: 18%;
+        overflow: hidden;
+    }
+
+    #caption {
+        min-width: 80%;
+        left: 10%;
+        bottom: 5%;
+        top: 70%;
+    }
 }

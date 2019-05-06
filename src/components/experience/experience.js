@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import './experience.css';
+import "./experience.css";
 
 const experience = props => {
     return (
         <div id="experience">
-            This is the experience section
+            This section is still under construction! Check back later...
         </div>
     );
-}
+};
 
 export default experience;

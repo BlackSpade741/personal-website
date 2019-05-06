@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import './about.css';
+import "./about.css";
 
 const about = props => {
     return (
         <div id="about">
-            this is the about section
+            This section is still under construction! Check back later...
         </div>
     );
-}
+};
 
 export default about;

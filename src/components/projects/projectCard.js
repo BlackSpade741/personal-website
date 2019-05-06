@@ -45,7 +45,7 @@ const projectCard = props => {
                         gutterBottom
                         variant="h5"
                         component="h2"
-                        style={{ fontFamily: "Titillium Web, sans-serif" }}
+                        style={{ fontFamily: "Space Mono, monospace" }}
                     >
                         {project.name}
                     </Typography>
