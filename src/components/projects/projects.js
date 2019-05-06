@@ -1,7 +1,8 @@
 import React from "react";
 
 import "./projects.css";
-import { Typography } from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 import ProjectCard from "./projectCard";
 
 const projects = props => {
@@ -28,7 +29,7 @@ const projects = props => {
         {
             name: "Motivate.Me",
             description:
-                "A prototype mobile phone application designed to help people stay active and keep working towards their fitness goals. ",
+                "A prototype mobile application designed to help people stay active and work towards their fitness goals. ",
             keywords: ["Design", "UX", "Prototype"],
             github: "https://github.com/BlackSpade741/motivate-me",
             demo: "https://pr.to/DEPB9M/",
@@ -47,15 +48,26 @@ const projects = props => {
 
     return (
         <div id="projects">
-            <Typography gutterBottom variant="h4" id="title">
-                <u>Projects</u>
-            </Typography>
+            <Grid container spacing={24}>
+                <Grid
+                    item
+                    xs={12}
+                    md={5}
+                    container
+                    justify="center"
+                    alignItems="center"
+                >
+                    <Typography gutterBottom variant="h4" id="title">
+                        <u>Projects</u>
+                    </Typography>
+                </Grid>
 
-            <div>
-                {projects.map(project => (
-                    <ProjectCard project={project} />
-                ))}
-            </div>
+                <Grid item xs={12} md={7}>
+                    {projects.map(project => (
+                        <ProjectCard project={project} />
+                    ))}
+                </Grid>
+            </Grid>
         </div>
     );
 };

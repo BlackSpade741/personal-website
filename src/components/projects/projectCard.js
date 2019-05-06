@@ -8,27 +8,30 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Chip from "@material-ui/core/Chip";
+import Link from "@material-ui/core/Link";
 
 const styles = {
     card: {
-        maxWidth: 280,
+        maxWidth: 300,
         display: "inline-block",
         margin: "5px"
     },
-    cardContent: {
-        height: 500
-    },
     media: {
-        // ⚠️ object-fit is not supported by IE 11.
         objectFit: "cover"
-    }
+    },
+    chip: {
+        margin: "0 5px",
+        backgroundColor: "#f86d76"
+    },
+    link: {}
 };
 
 const projectCard = props => {
     const { classes, project } = props;
     return (
         <Card className={classes.card}>
-            <CardActionArea>
+            <div>
                 <CardMedia
                     component="img"
                     alt={project.name + " image"}
@@ -52,15 +55,46 @@ const projectCard = props => {
                     >
                         {project.description}
                     </Typography>
+
+                    {/* List of tags */}
+                    <div className="tagList">
+                        {project.keywords.map(keyword => (
+                            <Chip
+                                label={keyword}
+                                className={classes.chip}
+                                color="secondary"
+                            />
+                        ))}
+                    </div>
                 </CardContent>
-            </CardActionArea>
+            </div>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
+                <Button size="small" color="error">
+                    <Link
+                        href={project.github}
+                        className={classes.link}
+                        color="inherit"
+                        target="_blank"
+                        rel="noopener"
+                        underline="always"
+                    >
+                        Github
+                    </Link>
                 </Button>
-                <Button size="small" color="primary">
-                    Learn More
-                </Button>
+                {project.demo === "" ? null : (
+                    <Button size="small" color="error">
+                        <Link
+                            href={project.demo}
+                            className={classes.link}
+                            color="inherit"
+                            target="_blank"
+                            rel="noopener"
+                            underline="always"
+                        >
+                            Demo
+                        </Link>
+                    </Button>
+                )}
             </CardActions>
         </Card>
     );

@@ -1,7 +1,7 @@
 #projects {
     font-family: "Space Mono", monospace;
     background-color: #c2f8ed;
-    height: 500px;
+    /* min-height: 520px; */
     padding: 20px;
 }
 
@@ -9,4 +9,11 @@
     font-family: "Space Mono", monospace;
     color: #1c2833;
     padding: 10px;
+    margin: 0;
+}
+
+@media only screen and (min-width: 960px) {
+    #title {
+        margin: 0 0 0 10%;
+    }
 }
