@@ -1,4 +1,33 @@
 #about {
-    height: 400px;
     background-color: #eaf2f8;
+    padding: 5% 0;
+}
+
+#about-title {
+    font-family: "Space Mono", monospace;
+    color: black;
+    padding: 10px 30px;
+    margin: 0;
+    display: block;
+}
+
+@media only screen and (min-width: 960px) {
+    #about-title {
+        margin: 0 0 0 10%;
+    }
+}
+
+#about-icon {
+    max-height: 200px;
+    display: block;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+#about-content {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
 }

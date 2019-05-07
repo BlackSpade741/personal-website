@@ -15,6 +15,7 @@ import About from "./components/about/about";
 import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
 import Contact from "./components/contact/contact";
+import Footer from "./components/footer/footer";
 import ScrollToTopFab from "./components/scrollToTopFab";
 
 const theme = createMuiTheme({
@@ -101,6 +102,7 @@ class App extends Component {
                     <Element name="contact" className="element">
                         <Contact />
                     </Element>
+                    <Footer />
 
                     <ScrollToTopFab
                         onClick={this.scrollToTop}

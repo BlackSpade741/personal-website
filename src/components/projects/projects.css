@@ -1,20 +1,21 @@
 #projects {
     font-family: "Space Mono", monospace;
-    background-color: #f53240;
+    background-color: #ffffff;
     /* min-height: 520px; */
     padding: 20px;
 }
 
-#title {
+#projects-title {
     font-family: "Space Mono", monospace;
     /* color: #1c2833; */
-    color: white;
-    padding: 10px;
+    color: black;
+    background-color: white;
+    padding: 10px 30px;
     margin: 0;
 }
 
 @media only screen and (min-width: 960px) {
-    #title {
+    #projects-title {
         margin: 0 0 0 10%;
     }
 }

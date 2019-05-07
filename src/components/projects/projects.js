@@ -57,7 +57,7 @@ const projects = props => {
                     justify="center"
                     alignItems="center"
                 >
-                    <Typography gutterBottom variant="h4" id="title">
+                    <Typography gutterBottom variant="h4" id="projects-title">
                         <u>Projects</u>
                     </Typography>
                 </Grid>
