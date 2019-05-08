@@ -18,12 +18,20 @@
     position: absolute;
     right: 13%;
     top: 40%;
-    padding: 1em;
+    padding: 1.5em;
     background-color: white;
     border-radius: 5px;
     margin: auto;
     box-shadow: 5px 10px#02C8A7;
     max-width: 30%;
+}
+
+#caption h3 {
+    font-size: 7vh;
+}
+
+#caption h5 {
+    font-size: 4vh;
 }
 
 @media only screen and (max-width: 960px) {
@@ -41,12 +49,14 @@
         transform: translateX(-50%);
         top: 70%;
     }
+}
 
+@media only screen and (max-width: 480px) {
     #caption h3 {
         font-size: 200%;
     }
 
     #caption h5 {
-        font-size: 120%;
+        font-size: 150%;
     }
 }

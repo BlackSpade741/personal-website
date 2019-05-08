@@ -17,7 +17,7 @@ const styles = theme => ({
     },
     grow: {
         flexGrow: 1,
-        fontFamily: "Space Mono, monospace"
+        fontFamily: "EllenFont, sans-serif"
     },
     menuButton: {
         marginLeft: -12,
@@ -37,10 +37,10 @@ const header = props => {
                 <Toolbar>
                     <Avatar
                         style={{ margin: "10px" }}
-                        src={require("../../resources/ellen-icon.jpg")}
+                        src={require("../../resources/spade.png")}
                     />
                     <Typography
-                        variant="h6"
+                        variant="h4"
                         color="inherit"
                         align="left"
                         className={classes.grow}

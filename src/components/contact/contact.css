@@ -1,5 +1,12 @@
 #contact {
     /* background-color: #1a5276; */
     background-color: #f9be02;
-    height: 200px;
+    height: 500px;
+}
+
+#contact-title {
+    font-family: "Space Mono", monospace;
+    color: black;
+    padding: 10px 30px;
+    margin: 0;
 }

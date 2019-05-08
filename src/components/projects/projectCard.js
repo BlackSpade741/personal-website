@@ -23,7 +23,16 @@ const styles = {
         margin: "0 5px",
         backgroundColor: "#f86d76"
     },
-    link: {}
+    link: {},
+    title: {
+        fontFamily: "Space Mono, monospace"
+    },
+    content: {
+        display: "inline-block",
+        height: "90px",
+        fontFamily: "Muli, sans-serif",
+        padding: "5px"
+    }
 };
 
 const projectCard = props => {
@@ -44,14 +53,11 @@ const projectCard = props => {
                         gutterBottom
                         variant="h5"
                         component="h2"
-                        style={{ fontFamily: "Space Mono, monospace" }}
+                        className={classes.title}
                     >
                         {project.name}
                     </Typography>
-                    <Typography
-                        component="p"
-                        style={{ display: "inline-block", height: "90px" }}
-                    >
+                    <Typography component="p" className={classes.content}>
                         {project.description}
                     </Typography>
 

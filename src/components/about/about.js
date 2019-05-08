@@ -35,7 +35,7 @@ const about = props => {
                         <u>About Me</u>
 
                         <img
-                            src={require("../../resources/ellen-icon.jpg")}
+                            src={require("../../resources/ellen-pic.jpg")}
                             alt="Ellen Icon"
                             id="about-icon"
                         />

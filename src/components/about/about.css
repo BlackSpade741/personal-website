@@ -18,10 +18,21 @@
 }
 
 #about-icon {
-    max-height: 200px;
+    height: 250px;
     display: block;
     margin: 30px;
+    padding: 5px;
+    border: 2px solid #b5bdc3;
     border-radius: 50%;
+
+    transition: filter 0.5s ease-in-out;
+    -webkit-filter: grayscale(50%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(50%);
+}
+
+#about-icon:hover {
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%); /* FF 35+ */
 }
 
 #about-content {
@@ -30,4 +41,5 @@
     padding: 20px;
     background-color: white;
     border-radius: 10px;
+    border: 2px solid #b5bdc3;
 }

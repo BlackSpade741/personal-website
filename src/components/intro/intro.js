@@ -17,7 +17,11 @@ const intro = props => {
                 id="headshot"
             />
             <div id="caption">
-                <Typography variant="h3" style={{ fontFamily: "inherit" }}>
+                <Typography
+                    variant="h3"
+                    style={{ fontFamily: "inherit" }}
+                    gutterBottom
+                >
                     <strong>
                         <u>Hi, my name is Ellen.</u>
                     </strong>
