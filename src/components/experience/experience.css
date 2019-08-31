@@ -1,4 +1,11 @@
 #experience {
     background-color: #283747;
-    height: 400px;
+    min-height: 400px;
+    padding: 20px;
+}
+
+#experience-title {
+    color: white;
+    padding: 0.5em;
+    font-family: "Space Mono", monospace;
 }

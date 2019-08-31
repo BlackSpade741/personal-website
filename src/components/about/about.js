@@ -8,7 +8,7 @@ import "./about.css";
 
 const styles = theme => ({
     body1: {
-        fontFamily: "Muli, sans-serif",
+        fontFamily: "Muli, Roboto, sans-serif",
         fontSize: "110%",
         margin: "5px"
     },

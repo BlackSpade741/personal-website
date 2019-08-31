@@ -27,11 +27,11 @@
 }
 
 #caption h3 {
-    font-size: 7vh;
+    font-size: 3rem;
 }
 
 #caption h5 {
-    font-size: 4vh;
+    font-size: 2rem;
 }
 
 @media only screen and (max-width: 960px) {

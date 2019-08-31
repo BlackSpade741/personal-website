@@ -1,7 +1,8 @@
 #contact {
     /* background-color: #1a5276; */
     background-color: #f9be02;
-    height: 500px;
+    min-height: 500px;
+    padding: 20px;
 }
 
 #contact-title {
@@ -9,4 +10,10 @@
     color: black;
     padding: 10px 30px;
     margin: 0;
+}
+
+@media only screen and (min-width: 960px) {
+    #contact {
+        padding: 20px 10%;
+    }
 }

@@ -15,6 +15,10 @@
 }
 
 @media only screen and (min-width: 960px) {
+    #projects {
+        padding: 20px 10%;
+    }
+
     #projects-title {
         margin: 0 0 0 10%;
     }
