@@ -11,6 +11,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import EmailIcon from "@material-ui/icons/Email";
 import HomeIcon from "@material-ui/icons/Home";
+// import {LinkedInIcon} from '@material-ui/icons/';
 
 import "./contact.css";
 
@@ -28,7 +29,7 @@ const style = {
     },
     contactInfo: {
         fontSize: "120%",
-        padding: "10%"
+        padding: "10%",
         // backgroundColor: "black"
     }
 };
@@ -57,7 +58,7 @@ class Contact extends Component {
                     <u>Contact</u>
                 </Typography>
                 <Grid container>
-                    <Grid
+                    {/* <Grid
                         id="contact-left"
                         className={classes.left}
                         xs="12"
@@ -108,13 +109,13 @@ class Contact extends Component {
                                 <Button>Submit</Button>
                             </Grid>
                         </Grid>
-                    </Grid>
+                    </Grid> */}
 
                     <Grid
                         // direction="column"
                         container
                         xs="12"
-                        md="7"
+                        md="12"
                         alignItems="flex-start"
                         // spacing="5"
                         className={classes.contactInfo}
@@ -130,8 +131,14 @@ class Contact extends Component {
                                 <ListItemIcon>
                                     <HomeIcon />
                                 </ListItemIcon>
-                                <ListItemText primary="Markham, ON L3R 7A3" />
+                                <ListItemText primary="Coquitlam, BC V3J 0H6" />
                             </ListItem>
+                            {/* <ListItem>
+                                 <ListItemIcon>
+                                    <LinkedInIcon/>
+                                </ListItemIcon>
+                                <ListItemText primary="https://www.linkedin.com/in/ellenyufeichen/"/>
+                            </ListItem> */}
                         </List>
                     </Grid>
                 </Grid>

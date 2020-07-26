@@ -21,11 +21,17 @@ const styles = {
         fontSize: "150%"
     },
     title: {
-        marginBottom: "0.5rem"
+        
     },
     description: {
         fontSize: "85%",
         fontFamily: "Muli, sans-serif"
+    },
+    timePeriod:{
+        fontSize: "70%",
+        color: "lightgray",
+        fontFamily: "Muli, sans-serif",
+        marginBottom: "0.5rem"
     }
 };
 
@@ -40,6 +46,9 @@ const experienceCard = props => {
                 </Typography>
                 <Typography variant="p" className={classes.title}>
                     {experience.title}
+                </Typography>
+                <Typography variant="p" className={classes.timePeriod}>
+                    {experience.timePeriod}
                 </Typography>
                 <Typography variant="p" className={classes.description}>
                     {experience.description}

@@ -27,8 +27,7 @@ const intro = props => {
                     </strong>
                 </Typography>
                 <Typography variant="h5" style={{ fontFamily: "inherit" }}>
-                    I am a fourth year computer science student studying at the
-                    University of Toronto.
+                    I am a software development engineer currently improving directory services at AWS.
                 </Typography>
             </div>
         </div>

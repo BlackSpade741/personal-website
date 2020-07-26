@@ -1,6 +1,6 @@
 #contact {
     /* background-color: #1a5276; */
-    background-color: #f9be02;
+    background-color: #f7cd52;
     min-height: 500px;
     padding: 20px;
 }
@@ -14,6 +14,6 @@
 
 @media only screen and (min-width: 960px) {
     #contact {
-        padding: 20px 10%;
+        padding: 20px 30%;
     }
 }

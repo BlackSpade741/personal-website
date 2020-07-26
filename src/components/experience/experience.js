@@ -9,6 +9,14 @@ import "./experience.css";
 const experience = props => {
     const infos = [
         {
+            org: "Amazon Web Services",
+            title: "Software Development Engineer I",
+            description:
+                "Developing native AWS applications to improve directory services and identity solutions using Python",
+            industry: "Technology",
+            timePeriod: "Jun 2020 -"
+        },
+        {
             org: "Citi ICG Technology Group",
             title: "Technology Summer Analyst - Software Development",
             description:
@@ -30,7 +38,7 @@ const experience = props => {
             description:
                 "Helped students with coursework during office hours, invigilated and evaluated examinations",
             industry: "Education",
-            timePeriod: "Sept 2018 - Apr 2019"
+            timePeriod: "Sept 2018 - Apr 2020"
         }
     ];
 
