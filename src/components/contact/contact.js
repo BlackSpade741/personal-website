@@ -11,7 +11,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import EmailIcon from "@material-ui/icons/Email";
 import HomeIcon from "@material-ui/icons/Home";
-// import {LinkedInIcon} from '@material-ui/icons/';
+// import LinkedInIcon from '@material-ui/icons/';
 
 import "./contact.css";
 
@@ -133,12 +133,23 @@ class Contact extends Component {
                                 </ListItemIcon>
                                 <ListItemText primary="Coquitlam, BC V3J 0H6" />
                             </ListItem>
-                            {/* <ListItem>
-                                 <ListItemIcon>
+                            <ListItem>
+                                 {/* <ListItemIcon>
                                     <LinkedInIcon/>
-                                </ListItemIcon>
-                                <ListItemText primary="https://www.linkedin.com/in/ellenyufeichen/"/>
-                            </ListItem> */}
+                                </ListItemIcon> */}
+                                <ListItemText>
+                                <a href="https://github.com/blackspade741" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                </ListItemText>
+                            </ListItem>
+                            <ListItem>
+                                 {/* <ListItemIcon>
+                                    <LinkedInIcon/>
+                                </ListItemIcon> */}
+                                <ListItemText>
+                                <a href="https://www.linkedin.com/in/ellenyufeichen/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                </ListItemText>
+                            </ListItem>
+
                         </List>
                     </Grid>
                 </Grid>

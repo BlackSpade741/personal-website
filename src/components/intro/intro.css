@@ -6,7 +6,8 @@
 }
 
 #headshot {
-    height: 90%;
+    max-height: 90%;
+    max-width: 100%;
     display: block;
     position: absolute;
     bottom: 0;

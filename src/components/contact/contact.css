@@ -1,6 +1,6 @@
 #contact {
     /* background-color: #1a5276; */
-    background-color: #f7cd52;
+    background-color: #71d887;
     min-height: 500px;
     padding: 20px;
 }
@@ -16,4 +16,13 @@
     #contact {
         padding: 20px 30%;
     }
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
