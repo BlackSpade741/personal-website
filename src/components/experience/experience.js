@@ -42,6 +42,10 @@ const experience = props => {
         }
     ];
 
+    const creds = [
+        "https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Cloud-Practitioner_512x512.bc006f14f986fa4f3ca238b0b62be458ce1fb5ce.png"
+    ]
+
     return (
         <div id="experience">
             <Typography gutterBottom variant="h4" id="experience-title">
@@ -55,6 +59,24 @@ const experience = props => {
                 {infos.map(info => (
                     <ExperienceCard experience={info} />
                 ))}
+            </Grid>
+            <Grid
+                style={{ width: "100%", marginTop: '20px' }}
+                alignContent="center"
+                justify="center"
+            >
+                {
+                    creds.map(pic => (
+                        <img
+                            src={pic}
+                            style={{
+                                width: "120px",
+                                height: "120px",
+                                display: "inline-block"
+                            }}
+                        />
+                    ))
+                }
             </Grid>
         </div>
     );
