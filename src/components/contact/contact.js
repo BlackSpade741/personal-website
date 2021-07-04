@@ -11,7 +11,8 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import EmailIcon from "@material-ui/icons/Email";
 import HomeIcon from "@material-ui/icons/Home";
-// import LinkedInIcon from '@material-ui/icons/';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 import "./contact.css";
 
@@ -125,26 +126,26 @@ class Contact extends Component {
                                 <ListItemIcon>
                                     <EmailIcon />
                                 </ListItemIcon>
-                                <ListItemText primary="chenellen007 at gmail dot com" />
+                                <ListItemText primary="chenellen007 ﹫ gmail ○ com" />
                             </ListItem>
                             <ListItem>
                                 <ListItemIcon>
                                     <HomeIcon />
                                 </ListItemIcon>
-                                <ListItemText primary="Coquitlam, BC V3J 0H6" />
+                                <ListItemText primary="Markham, ON, Canada L3R 7A3" />
                             </ListItem>
                             <ListItem>
-                                 {/* <ListItemIcon>
-                                    <LinkedInIcon/>
-                                </ListItemIcon> */}
+                                 <ListItemIcon>
+                                    <GitHubIcon/>
+                                </ListItemIcon>
                                 <ListItemText>
                                 <a href="https://github.com/blackspade741" target="_blank" rel="noopener noreferrer">GitHub</a>
                                 </ListItemText>
                             </ListItem>
                             <ListItem>
-                                 {/* <ListItemIcon>
+                                 <ListItemIcon>
                                     <LinkedInIcon/>
-                                </ListItemIcon> */}
+                                </ListItemIcon>
                                 <ListItemText>
                                 <a href="https://www.linkedin.com/in/ellenyufeichen/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                                 </ListItemText>

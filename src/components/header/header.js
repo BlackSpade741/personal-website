@@ -37,7 +37,7 @@ const header = props => {
                 <Toolbar>
                     <Avatar
                         style={{ margin: "10px" }}
-                        src={require("../../resources/spade.png")}
+                        src={require("../../resources/spade.png").default}
                     />
                     <Typography
                         variant="h4"
@@ -45,7 +45,7 @@ const header = props => {
                         align="left"
                         className={classes.grow}
                     >
-                        <u>ellen.chen</u>
+                        <u className={classes.grow}>ellen.chen</u>
                     </Typography>
 
                     <div id="buttons">

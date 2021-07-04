@@ -10,10 +10,11 @@ const styles = theme => ({
     body1: {
         fontFamily: "Muli, Roboto, sans-serif",
         fontSize: "110%",
-        margin: "5px"
+        margin: "5px",
+        color: "#2b2b2b"
     },
     link: {
-        color: "inherit"
+        color: "inherit",
     }
 });
 
@@ -35,7 +36,7 @@ const about = props => {
                         <u>About Me</u>
 
                         <img
-                            src={require("../../resources/ellen-pic.jpg")}
+                            src={require("../../resources/ellen-pic.jpg").default}
                             alt="Ellen Icon"
                             id="about-icon"
                         />
@@ -49,9 +50,17 @@ const about = props => {
                             variant="body1"
                             paragraph
                         >
-                            {
-                                "I started programming when I was in Grade 10 in an elective Computer Science class, and fell in love with it instantly. I've been programming and making ever since, with a love for UI/UX design, front-end development, and full-stack web development. I recently completed my Honours Bachelor of Science degree at the University of Toronto, St. George campus, specializing in Computer Science, and received high honours. Currently, I'm just beginning my professional career at Amazon Web Services as a software development engineer for AWS Identity and Directory Services."
-                            }
+                            
+                            I started programming when I was in Grade 10 in an elective Computer Science class, and fell in love with it instantly. I've been programming and making ever since, with a love for UI/UX design, front-end development, and full-stack web development. I recently completed my Honours Bachelor of Science degree at the University of Toronto, St. George campus, specializing in Computer Science, and received high honours. Currently, I'm at {" "}
+                            <a
+                                href="https://lever.co"
+                                className={classes.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <strong>Lever</strong>
+                            </a>
+                            's APINT (API & Integrations) team working with a group of awesome engineers to develop & maintain custom integrations to the Lever Hire platform.                             
                         </Typography>
 
                         <Typography
@@ -71,14 +80,14 @@ const about = props => {
                         >
                             Besides software development, my passions include
                             art and design, music (I'm a big alternative rock
-                            fan!), video games (WoW, Uncharted, and God of War are my current favourites), and making YouTube videos with my{" "}
+                            fan, and I play the bass guitar!), video games (WoW, Uncharted, and God of War are my current favourites), and making YouTube videos with my{" "}
                             <a
                                 href="https://reecemartin.ca"
                                 className={classes.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                partner in crime
+                                <strong>partner in crime</strong>
                             </a>
                             .
                         </Typography>

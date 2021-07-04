@@ -12,7 +12,7 @@ const intro = props => {
                 progress right here.
             </Typography> */}
             <img
-                src={require("../../resources/headshot.png")}
+                src={require("../../resources/headshot.png").default}
                 alt="headshot"
                 id="headshot"
             />
@@ -27,7 +27,7 @@ const intro = props => {
                     </strong>
                 </Typography>
                 <Typography variant="h5" style={{ fontFamily: "inherit" }}>
-                    I am a software development engineer currently improving directory services at AWS.
+                    I am a software engineer currently improving APIs and Integrations at Lever.
                 </Typography>
             </div>
         </div>

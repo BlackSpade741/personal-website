@@ -9,12 +9,20 @@ import "./experience.css";
 const experience = props => {
     const infos = [
         {
+            org: "Lever",
+            title: "Software Engineer III",
+            description:
+                "Working as part of the API & Integrations team to develop & maintain application integrations using Typescript, DerbyJS, & Restify",
+            industry: "Technology",
+            timePeriod: "Jun 2021 - "
+        },
+        {
             org: "Amazon Web Services",
             title: "Software Development Engineer I",
             description:
                 "Developing native AWS applications to improve directory services and identity solutions using Python",
             industry: "Technology",
-            timePeriod: "Jun 2020 -"
+            timePeriod: "Jun 2020 - Jun 2021"
         },
         {
             org: "Citi ICG Technology Group",

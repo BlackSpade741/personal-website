@@ -9,7 +9,7 @@ import { withStyles } from "@material-ui/core/styles";
 
 const styles = {
     card: {
-        width: "500px",
+        maxWidth: "500px",
         backgroundColor: "rgba(255,255,255,0.1)",
         color: "white",
         margin: "auto",
@@ -44,13 +44,13 @@ const experienceCard = props => {
                 <Typography variant="h6" className={classes.org}>
                     {experience.org}
                 </Typography>
-                <Typography variant="p" className={classes.title}>
+                <Typography className={classes.title}>
                     {experience.title}
                 </Typography>
-                <Typography variant="p" className={classes.timePeriod}>
+                <Typography className={classes.timePeriod}>
                     {experience.timePeriod}
                 </Typography>
-                <Typography variant="p" className={classes.description}>
+                <Typography className={classes.description}>
                     {experience.description}
                 </Typography>
             </CardContent>
