@@ -74,7 +74,7 @@ const experience = props => {
                 justify="center"
             >
                 {
-                    creds.entries.map([key, value] => (
+                    creds.entries().map(([key, value]) => (
                         <img
                             src={value}
                             alt={key}
