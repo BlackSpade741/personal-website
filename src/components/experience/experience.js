@@ -50,9 +50,9 @@ const experience = props => {
         }
     ];
 
-    const creds = [
-        "https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Cloud-Practitioner_512x512.bc006f14f986fa4f3ca238b0b62be458ce1fb5ce.png"
-    ]
+    const creds = {
+        aws: "https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Cloud-Practitioner_512x512.bc006f14f986fa4f3ca238b0b62be458ce1fb5ce.png"
+    }
 
     return (
         <div id="experience">
@@ -74,9 +74,10 @@ const experience = props => {
                 justify="center"
             >
                 {
-                    creds.map(pic => (
+                    creds.entries.map([key, value] => (
                         <img
-                            src={pic}
+                            src={value}
+                            alt={key}
                             style={{
                                 width: "120px",
                                 height: "120px",
