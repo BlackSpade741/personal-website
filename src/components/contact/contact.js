@@ -132,7 +132,7 @@ class Contact extends Component {
                                 <ListItemIcon>
                                     <HomeIcon />
                                 </ListItemIcon>
-                                <ListItemText primary="Markham, ON, Canada L3R 7A3" />
+                                <ListItemText primary="Toronto, ON, Canada M6G 0A9" />
                             </ListItem>
                             <ListItem>
                                  <ListItemIcon>

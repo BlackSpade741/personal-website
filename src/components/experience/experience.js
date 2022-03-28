@@ -12,7 +12,7 @@ const experience = props => {
             org: "Lever",
             title: "Software Engineer III",
             description:
-                "Working as part of the API & Integrations team to develop & maintain application integrations using Typescript, DerbyJS, & Restify",
+                "Working as part of the API & Integrations team to develop & maintain application integrations & the Lever API using Typescript, Coffeescript, DerbyJs, and ShareDB",
             industry: "Technology",
             timePeriod: "Jun 2021 - "
         },
@@ -20,7 +20,7 @@ const experience = props => {
             org: "Amazon Web Services",
             title: "Software Development Engineer I",
             description:
-                "Developing native AWS applications to improve directory services and identity solutions using Python",
+                "Developing native AWS applications to improve directory services and identity solutions using Python, AWS DynamoDB, AWS Lambda, and AWS Directory Services",
             industry: "Technology",
             timePeriod: "Jun 2020 - Jun 2021"
         },
@@ -74,7 +74,7 @@ const experience = props => {
                 justify="center"
             >
                 {
-                    creds.entries().map(([key, value]) => (
+                    Object.entries(creds).map(([key, value]) => (
                         <img
                             src={value}
                             alt={key}
