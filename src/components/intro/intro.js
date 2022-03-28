@@ -12,7 +12,7 @@ const intro = props => {
                 progress right here.
             </Typography> */}
             <img
-                src={require("../../resources/headshot.png").default}
+                src={require("../../resources/headshot.png")}
                 alt="headshot"
                 id="headshot"
             />

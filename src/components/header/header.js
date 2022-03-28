@@ -37,7 +37,7 @@ const header = props => {
                 <Toolbar>
                     <Avatar
                         style={{ margin: "10px" }}
-                        src={require("../../resources/spade.png").default}
+                        src={require("../../resources/spade.png")}
                     />
                     <Typography
                         variant="h4"
