@@ -12,7 +12,7 @@ const experience = props => {
             org: "Lever",
             title: "Software Engineer III",
             description:
-                "Working as part of the API & Integrations team to develop & maintain application integrations & the Lever API using Typescript, Coffeescript, DerbyJs, and ShareDB",
+                "Working as part of the RBAC team to develop new user management & access control options for the Lever Hire app, using Typescript, Coffeescript, DerbyJs, and ShareDB",
             industry: "Technology",
             timePeriod: "Jun 2021 - "
         },

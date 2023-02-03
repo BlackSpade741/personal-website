@@ -60,7 +60,7 @@ const about = props => {
                             >
                                 <strong>Lever</strong>
                             </a>
-                            's APINT (API & Integrations) team working with a group of awesome engineers to develop & maintain custom integrations to the Lever Hire platform.                             
+                            's RBAC team working with a group of awesome engineers to develop & maintain the Lever Hire platform.                             
                         </Typography>
 
                         <Typography
