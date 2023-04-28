@@ -9,12 +9,20 @@ import "./experience.css";
 const experience = props => {
     const infos = [
         {
+            org: "Royal Bank of Canada",
+            title: "Senior Cloud Engineer, Public Cloud Operations",
+            description:
+                "Working as part of the Public Cloud Operations team to improve developer experience for internal RBC engineering teams on the public cloud (AWS, Azure, & GCP)",
+            industry: "Finance",
+            timePeriod: "Apr 2023 - "
+        },
+        {
             org: "Lever",
             title: "Software Engineer III",
             description:
                 "Working as part of the RBAC team to develop new user management & access control options for the Lever Hire app, using Typescript, Coffeescript, DerbyJs, and ShareDB",
             industry: "Technology",
-            timePeriod: "Jun 2021 - "
+            timePeriod: "Jun 2021 - Apr 2023"
         },
         {
             org: "Amazon Web Services",

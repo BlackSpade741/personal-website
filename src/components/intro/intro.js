@@ -27,7 +27,7 @@ const intro = props => {
                     </strong>
                 </Typography>
                 <Typography variant="h5" style={{ fontFamily: "inherit" }}>
-                    I am a software engineer currently improving APIs and Integrations at Lever.
+                    I am a software engineer currently improving public cloud operations at RBC.
                 </Typography>
             </div>
         </div>
