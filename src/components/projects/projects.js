@@ -54,7 +54,6 @@ const projects = props => {
                     xs={12}
                     md={5}
                     container
-                    justify="center"
                     alignItems="center"
                 >
                     <Typography gutterBottom variant="h4" id="projects-title">

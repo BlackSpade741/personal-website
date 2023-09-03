@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
+import { createTheme, MuiThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import {
     Element,
@@ -18,7 +18,7 @@ import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
 import ScrollToTopFab from "./components/scrollToTopFab";
 
-const theme = createMuiTheme({
+const theme = createTheme({
     palette: {
         primary: {
             main: "#7CDBD5"

@@ -29,7 +29,6 @@ const about = props => {
                     xs={12}
                     md={5}
                     container
-                    justify="center"
                     alignItems="center"
                 >
                     <Typography gutterBottom variant="h4" id="about-title">
@@ -43,7 +42,7 @@ const about = props => {
                     </Typography>
                 </Grid>
 
-                <Grid item id="content" xs={12} md={7} alignContent="center">
+                <Grid item id="content" xs={12} md={7}>
                     <div id="about-content">
                         <Typography
                             className={classes.body1}

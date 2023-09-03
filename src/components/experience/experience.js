@@ -4,9 +4,24 @@ import ExperienceCard from "./experienceCard";
 
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import { withStyles } from "@material-ui/core/styles";
+
 import "./experience.css";
 
+const styles = theme => ({
+    body1: {
+        fontFamily: "Muli, Roboto, sans-serif",
+        fontSize: "110%",
+        margin: "5px",
+        color: "#2b2b2b"
+    },
+    link: {
+        color: "inherit",
+    }
+});
+
 const experience = props => {
+    const { classes } = props;
     const infos = [
         {
             org: "Royal Bank of Canada",
@@ -59,7 +74,14 @@ const experience = props => {
     ];
 
     const creds = {
-        aws: "https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Cloud-Practitioner_512x512.bc006f14f986fa4f3ca238b0b62be458ce1fb5ce.png"
+        aws: {
+            image: "https://d1.awsstatic.com/training-and-certification/Certification%20Badges/AWS-Certified_Cloud-Practitioner_512x512.bc006f14f986fa4f3ca238b0b62be458ce1fb5ce.png",
+            url: "https://www.credly.com/badges/ab045ced-614e-4375-a317-7a261cd75f94"
+        },
+        cka: {
+            image: "https://images.credly.com/images/8b8ed108-e77d-4396-ac59-2504583b9d54/twitter_thumb_201604_cka_from_cncfsite__281_29.png",
+            url: "https://www.credly.com/badges/5edbec5f-0b99-4a69-99ff-a8f48000efdf"
+        },
     }
 
     return (
@@ -69,8 +91,6 @@ const experience = props => {
             </Typography>
             <Grid
                 style={{ width: "100%" }}
-                alignContent="center"
-                justify="center"
             >
                 {infos.map(info => (
                     <ExperienceCard experience={info} />
@@ -78,20 +98,26 @@ const experience = props => {
             </Grid>
             <Grid
                 style={{ width: "100%", marginTop: '20px' }}
-                alignContent="center"
-                justify="center"
             >
                 {
                     Object.entries(creds).map(([key, value]) => (
-                        <img
-                            src={value}
-                            alt={key}
-                            style={{
-                                width: "120px",
-                                height: "120px",
-                                display: "inline-block"
-                            }}
-                        />
+                        <a
+                            href={value.url}
+                            className={classes.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            key={key}
+                        >
+                            <img
+                                src={value.image}
+                                alt={key}
+                                style={{
+                                    width: "120px",
+                                    height: "120px",
+                                    display: "inline-block"
+                                }}
+                            />
+                        </a>
                     ))
                 }
             </Grid>
@@ -99,4 +125,4 @@ const experience = props => {
     );
 };
 
-export default experience;
+export default withStyles(styles)(experience);

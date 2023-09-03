@@ -38,7 +38,7 @@ const styles = {
 const experienceCard = props => {
     const { classes, experience } = props;
     return (
-        <Card className={classes.card}>
+        <Card className={classes.card} key={experience.org + ' ' + experience.title}>
             <CardMedia />
             <CardContent>
                 <Typography variant="h6" className={classes.org}>

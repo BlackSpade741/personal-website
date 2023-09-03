@@ -38,7 +38,7 @@ const styles = {
 const projectCard = props => {
     const { classes, project } = props;
     return (
-        <Card className={classes.card}>
+        <Card className={classes.card} key={project.name}>
             <div>
                 <CardMedia
                     component="img"
