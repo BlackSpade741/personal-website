@@ -82,6 +82,10 @@ const experience = props => {
             image: "https://images.credly.com/images/8b8ed108-e77d-4396-ac59-2504583b9d54/twitter_thumb_201604_cka_from_cncfsite__281_29.png",
             url: "https://www.credly.com/badges/5edbec5f-0b99-4a69-99ff-a8f48000efdf"
         },
+        az104: {
+            image: "https://learn.microsoft.com/en-ca/media/learn/certification/badges/microsoft-certified-associate-badge.svg",
+            url: "https://learn.microsoft.com/en-ca/users/ellenchen-8648/credentials/eb37eb4692c0fa4c"
+        }
     }
 
     return (
