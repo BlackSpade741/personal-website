@@ -85,6 +85,10 @@ const experience = props => {
         az104: {
             image: "https://learn.microsoft.com/en-ca/media/learn/certification/badges/microsoft-certified-associate-badge.svg",
             url: "https://learn.microsoft.com/en-ca/users/ellenchen-8648/credentials/eb37eb4692c0fa4c"
+        },
+        dvac02: {
+            image: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Developer-Associate_badge.5c083fa855fe82c1cf2d0c8b883c265ec72a17c0.png",
+            url: "https://www.credly.com/badges/598958fd-f5ec-42fc-9843-6ca6fd4fc761/public_url"
         }
     }
 
